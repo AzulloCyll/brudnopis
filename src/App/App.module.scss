@@ -1,0 +1,29 @@
+// Zmienne
+$primary-color: #1a73e8;
+$text-color: #333;
+$heading-size: 2.5rem;
+$subheading-size: 1.5rem;
+$spacing: 20px;
+
+.Container {
+  text-align: center;
+  padding: $spacing;
+}
+
+.Title {
+  color: $primary-color;
+  font-size: $heading-size;
+  margin-bottom: 30px;
+}
+
+.H3 {
+  font-size: $subheading-size;
+  margin-bottom: 10px;
+}
+
+.ButtonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: $spacing;
+}

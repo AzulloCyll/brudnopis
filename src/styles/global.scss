@@ -1,0 +1,43 @@
+/* Global Styles & Reset */
+
+// Zmienne globalne
+$font-family:
+  "Inter",
+  system-ui,
+  -apple-system,
+  sans-serif;
+$bg-color: #f0f2f5;
+$text-color: #333;
+$line-height: 1.5;
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-color;
+  line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}

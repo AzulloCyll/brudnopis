@@ -1,0 +1,20 @@
+// Mapa rozmiarów ikon
+$icon-sizes: (
+  small: 16px,
+  medium: 24px,
+  large: 32px,
+);
+
+.IconWrapper {
+  display: inline-block;
+  vertical-align: middle;
+  transition: fill 0.2s;
+}
+
+// Generowanie klas dla rozmiarów
+@each $size, $dimension in $icon-sizes {
+  .#{$size} {
+    width: $dimension;
+    height: $dimension;
+  }
+}

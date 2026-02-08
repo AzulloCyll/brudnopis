@@ -1,0 +1,26 @@
+// Zmienne
+$card-bg: white;
+$card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$card-radius: 8px;
+$card-margin: 10px;
+
+// Mapa paddingów dla wariantów
+$padding-variants: (
+  small: 16px,
+  medium: 24px,
+  large: 32px,
+);
+
+.Card {
+  background-color: $card-bg;
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
+  margin: $card-margin;
+}
+
+// Generowanie klas dla wariantów
+@each $variant, $padding in $padding-variants {
+  .#{$variant} {
+    padding: $padding;
+  }
+}
